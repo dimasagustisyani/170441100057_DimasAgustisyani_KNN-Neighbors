@@ -1,6 +1,6 @@
 # Pengertian dan Cara Kerja Algoritma K-Nearest Neighbors (KNN)
 
-![](C:\mkdocs-material-master\docs\assets\images\1.png)
+![](assets\images\1.png)
 
 K-nearest neighbors atau knn adalah algoritma yang berfungsi untuk melakukan klasifikasi suatu data berdasarkan data pembelajaran (*train data sets*), yang diambil dari k tetangga terdekatnya (*nearest neighbors*). Dengan k merupakan banyaknya tetangga terdekat.
 
@@ -18,7 +18,7 @@ K-nearest neighbors melakukan klasifikasi dengan proyeksi data pembelajaran pada
 
   Jarak Euclidean adalah formula untuk mencari jarak antara 2 titik dalam ruang dua dimensi.
 
-  ![](C:\mkdocs-material-master\docs\assets\images\2.png)
+  ![](assets\images\2.png)
 
 - ###### **Hamming Distance**
 
@@ -70,22 +70,22 @@ Pada contoh ini, dilakukan klasifikasi suhu udara berdasarkan persepsi seseorang
 
 Untuk contoh ini terbentuk ruang dimensi 2, yang berisi 2 kriteria yaitu **temperatur udara** dan **kecepatan angin**.
 
-![](C:\mkdocs-material-master\docs\assets\images\3.png)
+![](assets\images\3.png)
 
 Pada proyeksi di atas sumbu vertikal adalah kecepatan angin, sumbu horizontal adalah temperatur suhu, warna biru adalah dingin, dan warna merah adalah panas.
 
 Dari proyeksi diatas, dapat dilakukan klasifikasi data baru. Misalnya, Bagaimana persepsi Marry saat temperatur udara 16°C dan kecepatan angin 3km/jam.
 
-![](C:\mkdocs-material-master\docs\assets\images\3.png)
+![](assets\images\3.png)
 
 Proses pencarian tetangga terdekat
 
-![](C:\mkdocs-material-master\docs\assets\images\4.png)
+![](assets\images\4.png)
 
 Dapat diketahui tetangga terdekatnya adalah titik ***c dingin*** dengan temperature 15°C dan kecepatan angin 5km/jam. Jadi berdasarkan pemilihan k = 1, klasifikasinya adalah **dingin**.
 
 Dengan melakukan proses di atas terhadap semua titik, diperoleh proyeksi klasifikasi berikut.
 
-![](C:\mkdocs-material-master\docs\assets\images\5.png)
+![](assets\images\5.png)
 
 **Catatan: Untuk pemilihan k lainnya, hasil klasifikasi ditentukan dengan frekuensi terbanyak. Misalnya k = 3, dengan titik terdekat dingin, panas, dingin. Hasil klasifikasi data baru tersebut adalah dingin.**
